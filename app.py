@@ -4,9 +4,9 @@ import markovify
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 
-with open(DIR+'/text-new.txt', 'r') as file:
-    data = file.read().replace("\n", " ")
-    data = data.split("+-+")
+# with open(DIR+'/text-new.txt', 'r') as file:
+#     data = file.read().replace("\n", " ")
+#     data = data.split("+-+")
 
 # # blog_post_model = markovify.Text(data)
 
@@ -26,7 +26,7 @@ with open(DIR+'/text-new.txt', 'r') as file:
 
 # textgen.train_from_file(DIR+'/text-new.txt', num_epochs=1)
 
-
+# textgen.save(DIR+'/cyril2_trained_network2.hdf5')
 
 # textgen.generate(3, temperature=0.7)
 
