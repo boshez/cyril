@@ -36,6 +36,6 @@ textgen = textgenrnn(weights_path=DIR+'/colaboratory_weights.hdf5',
                        
 # textgen.generate_samples(max_gen_length=1000)
 
-textgen.generate(temperature=0.3, interactive=True, top_n=5)
+textgen.generate(temperature=0.3)
 
 #textgen.generate_to_file('textgenrnn_texts.txt', max_gen_length=1000)
