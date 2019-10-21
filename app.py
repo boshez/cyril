@@ -30,12 +30,16 @@ DIR = os.path.dirname(os.path.abspath(__file__))
 
 # textgen.generate(3, temperature=0.7)
 
-textgen = textgenrnn(weights_path=DIR+'/colaboratory_weights.hdf5',
-                       vocab_path=DIR+'/colaboratory_vocab.json',
-                       config_path=DIR+'/colaboratory_config.json')
+# textgen = textgenrnn(weights_path=DIR+'/colaboratory_weights.hdf5',
+#                        vocab_path=DIR+'/colaboratory_vocab.json',
+#                        config_path=DIR+'/colaboratory_config.json')
+
+textgen = textgenrnn(weights_path=DIR+'/new_cyril_weights.hdf5',
+                       vocab_path=DIR+'/new_cyril_vocab.json',
+                       config_path=DIR+'/new_cyril_config.json')
                        
 # textgen.generate_samples(max_gen_length=1000)
 
-textgen.generate(temperature=0.3)
+textgen.generate(temperature=1.1)
 
 #textgen.generate_to_file('textgenrnn_texts.txt', max_gen_length=1000)
