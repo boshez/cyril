@@ -44,7 +44,7 @@ textgen = textgenrnn(weights_path=DIR+'/new_cyril2_weights.hdf5',
                        
 # textgen.generate_samples(max_gen_length=1000)
 
-textgen.generate(temperature=0.4, max_gen_length = 50)
+textgen.generate(temperature=0.9, max_gen_length=150)
 
 # textgen.generate(temperature=0.6, interactive=True, top_n=5)
 
